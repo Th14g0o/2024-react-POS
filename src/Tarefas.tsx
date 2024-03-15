@@ -60,4 +60,4 @@ let TarefaAppBar = () => {
       </div>
     );
   }
-  export default AppTarefa
+  export default App
