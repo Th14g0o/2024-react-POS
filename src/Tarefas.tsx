@@ -51,7 +51,6 @@ let TarefaAppBar = () => {
       {titulo: "Coisa 3", concluido: false}
     ];
     let mapa = tarefas.map((item) => (<li>{item}</li>));
-    console.log(mapa);
     // let obj_tarefas = tarefas.map((item, indice) => { return { id: indice, titulo: item } });
     return (
       <>
