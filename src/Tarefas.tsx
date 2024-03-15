@@ -43,7 +43,7 @@ let TarefaAppBar = () => {
     )
   }
   
-  function AppTarefa() {
+  function App() {
   
     const tarefas = [
       {titulo: "Coisa 1", concluido: false},
