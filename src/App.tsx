@@ -18,7 +18,7 @@ let TarefaAppBar = () => {
   );
 }
 
-let Tarefa = (props: any) => {
+const Tarefa = (props: any) => {
   return (
     <li className="p-2 rounded-lg">
       <div className="flex align-middle flex-row justify-between">
@@ -29,8 +29,7 @@ let Tarefa = (props: any) => {
           <p className="text-lg text-black" >  {props.data.titulo} </p>
         </div>
         <button className="flex self-center h-min text-red-500 border-2 border-red-500 p-2 rounded-lg">
-          <svg className="h-6 w-6 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
+          <svg className="h-6 w-6 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10" />
             <line x1="15" y1="9" x2="9" y2="15" />
             <line x1="9" y1="9" x2="15" y2="15" /></svg>
@@ -39,10 +38,10 @@ let Tarefa = (props: any) => {
       </div>
       <hr className="mt-2" />
     </li>
-  )
+  );
 }
 const App = () => {
-  
+
   return (
     <>
       <div className="w-full h-screen bg-gray-100 pt-8 ">
@@ -50,7 +49,7 @@ const App = () => {
           <TarefaAppBar />
           <div className="mt-8">
             <ul>
-              
+
             </ul>
           </div>
           <div className="mt-8">
