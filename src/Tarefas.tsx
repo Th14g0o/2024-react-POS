@@ -75,4 +75,4 @@ let TarefaAppBar = () => {
     )
   }
   
-  export default AppTarefa
+  export default App
