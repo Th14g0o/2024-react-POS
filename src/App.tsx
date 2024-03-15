@@ -48,8 +48,8 @@ const App = () => {
         <TarefaAppBar />
         <div className="mt-8">
           <ul>
-            <Tarefa texto="Tarefa 1" checado="true" />
-            <Tarefa texto="Tarefa 2" checado="false" />
+            <Tarefa texto="Tarefa 1" checado={true} />
+            <Tarefa texto="Tarefa 2" checado={false} />
           </ul>
         </div>
         <div className="mt-8">
