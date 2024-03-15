@@ -41,7 +41,7 @@ const Tarefa = (props: any) => {
   );
 }
 
-const App = () => {
+function App() {
   const tarefas = [
     { titulo: "Coisa 1", concluido: false },
     { titulo: "Coisa 2", concluido: true },
