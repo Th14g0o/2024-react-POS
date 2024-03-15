@@ -1,3 +1,10 @@
+const tarefas = [
+  {titulo: "Coisa 1", concluido: false},
+  {titulo: "Coisa 2", concluido: true},
+  {titulo: "Coisa 3", concluido: false}
+];
+let mapa = tarefas.map((item) => (<li>{item}</li>));
+
 let TarefaAppBar = () => {
   return (
     <div class="text-center">
@@ -43,8 +50,7 @@ let Tarefa = (props: any) => {
 }
 
 const App = () => {
-
-  
+  // let obj_tarefas = tarefas.map((item, indice) => { return { id: indice, titulo: item } });
   return (
     <>
       <div class="w-full h-screen bg-gray-100 pt-8 ">
@@ -52,10 +58,7 @@ const App = () => {
           <TarefaAppBar />
           <div class="mt-8">
             <ul>
-              
-              
-           
-
+              {tarefas.map((tarefa) => (<Tarefa data={tarefa} />))}
             </ul>
           </div>
           <div class="mt-8">
@@ -67,5 +70,33 @@ const App = () => {
     </>
   );
 }
+// //importando css, './' = mesma pasta
+// //import "./App.css";
 
+// // Tipagem necessaria em tsx, any = var(qualquer)
+// // MeuBotao vira uma tag
+// const MeuBotao = (props : any) =>{
+//   // props indica acesso as propriedas
+//   return( 
+//     // O que a tag MeuBotao vai inserir na tela
+//     //titulo é a propriedade em si
+//     <button> {props.titulo}</button>
+//   );
+// }
+
+// const App = () => {
+//     return (
+//       //uma tag pai é obrigatoria, nesse caso é o div, todo tqm que ser feito dentro dele
+//       //className é parte da sintxe do jsx
+//       <div className="aplicacao">
+//         <h1>Bem vindo ao mundo React</h1>
+//         <button>eu sou um botão html</button>
+//         <MeuBotao titulo="Sua mae" />
+//         <MeuBotao titulo="Seu pai" />
+//         <MeuBotao titulo="Você" />
+//       </div>
+//     );
+//   }
+  
+// //jsx = React
 export default App
