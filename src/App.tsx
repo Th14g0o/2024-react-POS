@@ -1,10 +1,3 @@
-const tarefas = [
-  {titulo: "Coisa 1", concluido: false},
-  {titulo: "Coisa 2", concluido: true},
-  {titulo: "Coisa 3", concluido: false}
-];
-let mapa = tarefas.map((item) => (<li>{item}</li>));
-
 let TarefaAppBar = () => {
   return (
     <div class="text-center">
@@ -58,7 +51,7 @@ const App = () => {
           <TarefaAppBar />
           <div class="mt-8">
             <ul>
-              {tarefas.map((tarefa) => (<Tarefa data={tarefa} />))}
+             
             </ul>
           </div>
           <div class="mt-8">
