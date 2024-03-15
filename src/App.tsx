@@ -18,7 +18,7 @@ let TarefaAppBar = () => {
   );
 }
 
-const Tarefa = (props: any) => {
+let Tarefa = (props: any) => {
   return (
     <li className="p-2 rounded-lg">
       <div className="flex align-middle flex-row justify-between">
