@@ -42,7 +42,7 @@ let Tarefa = (props: any) => {
   )
 }
 
-function App() {
+const App = () => {
 
   const tarefas = [
     {titulo: "Coisa 1", concluido: false},
@@ -71,7 +71,7 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default App
