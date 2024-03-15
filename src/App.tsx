@@ -26,8 +26,5 @@ const App = () => {
     );
   }
   
-  export default App;
-
-  //jsx = React
-
+//jsx = React
 export default App
