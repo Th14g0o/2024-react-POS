@@ -20,14 +20,19 @@ let TarefaAppBar = () => {
 
 
 const App = () => {
-  
+  const tarefas = [
+    { titulo: "Coisa 1", concluido: false },
+    { titulo: "Coisa 2", concluido: true },
+    { titulo: "Coisa 3", concluido: false }
+  ];
+  let mapa = tarefas.map((item) => (<li>{item}</li>));
   return (
     <div className="w-full h-screen bg-gray-100 pt-8 ">
       <div className="bg-white p-3 max-w-md mx-auto">
         <TarefaAppBar />
         <div className="mt-8">
           <ul>
-           
+
           </ul>
         </div>
         <div className="mt-8">
