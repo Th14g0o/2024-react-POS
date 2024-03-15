@@ -1,9 +1,3 @@
-const tarefas = [
-  "Coisa 1", 
-  "Coisa 2",
-  "Coisa 3", 
-];
-
 let TarefaAppBar = () => {
   return (
     <div className="text-center">
