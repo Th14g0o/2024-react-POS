@@ -26,7 +26,7 @@ const Tarefa = (props: any) => {
           <input type="checkbox" className="h-6 w-6 " />
         </div>
         <div className="p-2">
-          <p className="text-lg text-black" >  {props.titulo} </p>
+          <p className="text-lg text-black" >  {props.texto} </p>
         </div>
         <button className="flex self-center h-min text-red-500 border-2 border-red-500 p-2 rounded-lg">
           <svg className="h-6 w-6 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -42,14 +42,14 @@ const Tarefa = (props: any) => {
 }
 
 const App = () => {
-  
-
   return (
     <div className="w-full h-screen bg-gray-100 pt-8 ">
       <div className="bg-white p-3 max-w-md mx-auto">
         <TarefaAppBar />
         <div className="mt-8">
           <ul>
+            <Tarefa texto="Tarefa 1" />
+            <Tarefa texto="Tarefa 2" />
           </ul>
         </div>
         <div className="mt-8">
