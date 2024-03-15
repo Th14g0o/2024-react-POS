@@ -1,5 +1,5 @@
 //importando css, './' = mesma pasta
-import "./App.css";
+//import "./App.css";
 
 // Tipagem necessaria em tsx, any = var(qualquer)
 // MeuBotao vira uma tag
