@@ -44,13 +44,7 @@ let Tarefa = (props: any) => {
 
 const App = () => {
 
-  const tarefas = [
-    {titulo: "Coisa 1", concluido: false},
-    {titulo: "Coisa 2", concluido: true},
-    {titulo: "Coisa 3", concluido: false}
-  ];
-  let mapa = tarefas.map((item) => (<li>{item}</li>));
-  // let obj_tarefas = tarefas.map((item, indice) => { return { id: indice, titulo: item } });
+  
   return (
     <>
       <div class="w-full h-screen bg-gray-100 pt-8 ">
@@ -58,7 +52,7 @@ const App = () => {
           <TarefaAppBar />
           <div class="mt-8">
             <ul>
-              {tarefas.map((tarefa) => (<Tarefa data={tarefa} />))}
+              
               
            
 
