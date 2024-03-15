@@ -23,7 +23,7 @@ let Tarefa = (props: any) => {
     <li className="p-2 rounded-lg">
       <div className="flex align-middle flex-row justify-between">
         <div className="p-2">
-          <input type="checkbox" className="h-6 w-6 " checked={props.data.concluido}   />
+          <input type="checkbox" className="h-6 w-6 " checked={props.data.concluido} />
         </div>
         <div className="p-2">
           <p className="text-lg text-black" >  {props.data.titulo} </p>
@@ -42,20 +42,15 @@ let Tarefa = (props: any) => {
   )
 }
 const App = () => {
-  const tarefas = [
-    {titulo: "Coisa 1", concluido: false},
-    {titulo: "Coisa 2", concluido: true},
-    {titulo: "Coisa 3", concluido: false}
-  ];
-  let mapa = tarefas.map((item) => (<li>{item}</li>));
+  
   return (
     <>
       <div className="w-full h-screen bg-gray-100 pt-8 ">
         <div className="bg-white p-3 max-w-md mx-auto">
-         <TarefaAppBar />
+          <TarefaAppBar />
           <div className="mt-8">
             <ul>
-            {tarefas.map((tarefa) => (<Tarefa data={tarefa} />))}
+              
             </ul>
           </div>
           <div className="mt-8">
