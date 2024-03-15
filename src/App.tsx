@@ -19,10 +19,10 @@ const App = () => {
               <li className="p-2 rounded-lg">
                 <div className="flex align-middle flex-row justify-between">
                   <div className="p-2">
-                    <input type="checkbox" className="h-6 w-6 " checked={props.data.concluido} />
+                    <input type="checkbox" className="h-6 w-6 "  />
                   </div>
                   <div className="p-2">
-                    <p className="text-lg text-black" >  {props.data.titulo} </p>
+                    <p className="text-lg text-black" >  Tarefa</p>
                   </div>
                   <button className="flex self-center h-min text-red-500 border-2 border-red-500 p-2 rounded-lg">
                     <svg className="h-6 w-6 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
