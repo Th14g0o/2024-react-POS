@@ -1,3 +1,9 @@
+const tarefas = [
+  "Coisa 1", 
+  "Coisa 2",
+  "Coisa 3", 
+];
+
 let TarefaAppBar = () => {
   return (
     <div className="text-center">
@@ -41,12 +47,8 @@ const Tarefa = (props: any) => {
   );
 }
 
-function App() {
-  const tarefas = [
-    "Coisa 1", 
-    "Coisa 2",
-    "Coisa 3", 
-  ];
+const App = () => {
+  
 
   return (
     <div className="w-full h-screen bg-gray-100 pt-8 ">
