@@ -43,7 +43,6 @@ const Tarefa = (props: any) => {
 const App = () => {
 
   return (
-    <>
       <div className="w-full h-screen bg-gray-100 pt-8 ">
         <div className="bg-white p-3 max-w-md mx-auto">
           <TarefaAppBar />
@@ -58,7 +57,6 @@ const App = () => {
           </div>
         </div>
       </div>
-    </>
   );
 }
 // //importando css, './' = mesma pasta
