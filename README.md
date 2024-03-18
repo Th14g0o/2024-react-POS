@@ -15,6 +15,21 @@
 3. No vercel, crie um novo projeto importando o seu repositório
 4. Siga as mudanças do [learn react](https://react.dev/learn) e acompanhe a cada _commit_ as modificações no vercel
 
+- 12/03
+  - [Componentes react](https://react.dev/learn#components)
+  - [JSX](https://react.dev/learn#writing-markup-with-jsx)
+  - [css](https://react.dev/learn#adding-styles)
+  - [código js/ts no jsx](https://react.dev/learn#displaying-data)
+- 18/03
+  - [código js/ts no jsx](https://react.dev/learn#displaying-data)
+  - [renderização condicional](https://react.dev/learn#conditional-rendering)
+  - [listas](https://react.dev/learn#rendering-lists)
+- 19/03
+  - [respondendo a eventos](https://react.dev/learn#responding-to-events)
+  - [estado](https://react.dev/learn#updating-the-screen)
+  - [compartilhando dados entre componentes](https://react.dev/learn#sharing-data-between-components)
+  
+
 ## Links
 - React
   - [react.dev](https://react.dev/)
