@@ -7,14 +7,14 @@ const ListaDeTarefas = (props: any) => {
         <ul>
             {
                 props.dados.map((item: any) => {
-                    return (<ItemTarefa titulo={item.titulo} id={item.id} />)
+                    return (<ItemTarefa titulo={item.titulo} key={item.id} />)
                 })
             }
         </ul>
     );
 }
 const ItemTarefa = (props: any) => {
-    return (<li key={props.id}>{props.titulo}</li>)
+    return (<li >{props.titulo}</li>)
 }
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
         { id: 3, titulo: "aprender sobre autenticação", concluido: false }
     ]);
 
-    const escutarCliqueBotao = (evento: any) => {
+    const escutarCliqueBotao = () => {
         console.log('clicou');
         console.info(tarefa);
         const objeto = {
@@ -41,15 +41,14 @@ const App = () => {
         setTarefa(evento.target.value);
     }
 
-
     return (
         //uma tag pai é obrigatoria, nesse caso é o div, todo tqm que ser feito dentro dele
         //className é parte da sintxe do jsx
         <div className="aplicacao">
-            <h1>Infoweb ´Reacr</h1>
+            <h1>Infoweb - React</h1>
             <div>
                 <label htmlFor="tarefa">Informe a nova tarefa</label>
-                <input type="text" id="tarefa" value={tarefa} onChange={escutaModificacaoTexto} />
+                <input type="text" id="tarefa" placeholder={tarefa} onChange={escutaModificacaoTexto} />
                 <button onClick={escutarCliqueBotao}>Criar Nova tarefa</button>
             </div>
 
