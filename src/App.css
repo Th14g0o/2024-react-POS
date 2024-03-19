@@ -1,3 +1,20 @@
+#root, body{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .aplicacao{
-    background-color: deepskyblue;
+    border: 2px solid deepskyblue;
+    padding: 10px;
+}
+.aplicacao h1{
+    border-bottom: 2px solid deepskyblue;
+}
+.aplicacao button{
+    display: block;
+}
+.aplicacao li{
+    list-style-type: armenian;
 }
