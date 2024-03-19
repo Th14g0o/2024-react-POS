@@ -14,20 +14,18 @@ const MeuBotao = (props: any) => {
 const Usuario = (props: any) => {
   return <h1>{props.Nome}</h1>
 }
-const listaDeTarefas = (props: any) => {
+const ListaDeTarefas = (props: any) => {
   return (
-    <>
       <ul>
         {
-          props.dados.map((item) => {
-            return (<itemTarefa titulo={item.titulo} id={item.id} />)
+          props.dados.map((item: any) => {
+            return (<ItemTarefa titulo={item.titulo} id={item.id} />)
           })
         }
       </ul>
-    </>
   );
 }
-const itemTarefa = (props: any) => {
+const ItemTarefa = (props: any) => {
   return (<li key={props.id}>{props.titulo}</li>)
 }
 
@@ -67,7 +65,7 @@ const App = () => {
       <img
         className="avatar"
         src={usuario.imageUrl}
-        alt={'Photo of ' + usuario.name}
+        alt={'Photo of ' + usuario.nome}
         style={{
           width: usuario.imageSize,
           height: usuario.imageSize
@@ -89,7 +87,7 @@ const App = () => {
           })
         }
       </ul>
-      <listaDeTarefas dados={tarefasMundoReal} />
+      <ListaDeTarefas dados={tarefasMundoReal} />
     </div>
   );
 }
